@@ -1,0 +1,77 @@
+
+body {
+	background-image: url("https://i.pinimg.com/originals/91/b4/6a/91b46a7e9636e6e9a86d83c1ac2313b6.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+h1 {
+	text-align:center;
+	-webkit-animation: colorchange .5s infinite alternate;
+	font-size: 50px;
+}
+
+@-webkit-keyframes colorchange {
+	0% {
+		color: pink;
+	}
+	
+	50% {
+		color: powderblue;
+	}
+	
+	100% {
+		color: #cc99ff;
+	}
+}
+
+h3 {
+	color: #cc99ff;
+	text-align:center;
+}
+
+hr {
+	border-top: 10px dotted powderblue;
+}
+
+p {
+	text-align: center;
+	font-size: 200%;
+	color: pink;
+}
+
+.img1 {
+	width:120px;
+	height:120px;
+	float:left;
+}
+
+.img2 {
+	transform: scaleX(-1);
+	width:120px;
+	height:120px;
+	float: right;
+}
+
+a:link, a:visited {
+  color: white;
+  padding: 14px 25px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+ul {
+	color: pink;
+	font-size: 150%;
+}
+
+button
+{
+	text-align: center;
+	background-color: #cc99ff;
+	color: white;
+	border: 5px solid white;
+	border-radius: 5px;
+}
