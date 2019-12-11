@@ -176,7 +176,7 @@ function plus()
 	
 	loadArray();
 	
-	for (var i = 0; i < mrArray.length(); i++)
+	for (var i = 0; i < mrArray.length; i++)
 	{		
 		Due = mrArray[i];
 		cat = catArray[i];
