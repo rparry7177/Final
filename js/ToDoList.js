@@ -193,7 +193,8 @@ function plus()
 	
 	if ( Due > currDate )
 	{
-		item1 = item.bold().toColor("red");
+		item1 = item.bold();
+		item1 = item1.toColor("red");
 	}
 	
 	
