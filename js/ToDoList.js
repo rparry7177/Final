@@ -203,8 +203,7 @@ function plus()
 	}
 	else if ( due < cd )
 	{
-		item1 = item.bold();
-		item1 = item.fontcolor("red");
+		item1 = item.bold().fontcolor("red");
 	}
 	else
 	{
