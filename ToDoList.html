@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+	
+	<link href='https://fonts.googleapis.com/css?family=Permanent Marker' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Megrim' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="css/ToDoList.css" />
+	
+	<script type="text/javascript" src="js/ToDoList.js"></script>
+    <title>To-Do List</title>
+</head>
+
+<body onLoad="getAllData()">
+	<div id="output1">
+	 <table>
+	 <tr id="title">
+		<th>Done?</th>
+		<th>Task</th>
+		<th><img src = "img/calendar2.gif" height = "50px" width = "55px"></th>
+		<th>Priority</th>
+		<th>Category</th>
+	 </tr>
+	 </table>
+	 </div>
+	 
+	 <div>
+		<table id="output2"></table>
+	 </div>
+	  
+	 <br />
+	 
+	<div class="main" id="main" >
+		
+		<input type="text" onfocus="this.value=' '" value="Enter to do item" id="item"+temp>
+		
+		<input type='date' id='dueDate'+temp  min="2019-10-01" max="2020-12-31">
+		
+		
+		<select id='priority'+temp>
+		<option value='High' id="high">High</option>
+		<option value='Medium' id="med">Medium</option> 
+		<option value='Low' id="low">Low</option>
+		</select>
+		
+		<select id='cat'+temp>
+		<option value='Personal' selected>Personal</option>
+		<option value='Work'>Work</option> 
+		</select>
+		
+		<img src="img\plus3.gif" height = "20px" width = "20px" onclick="plus()">
+		
+		<input type="button" value="Delete All" onclick="clearValues()">
+	</div>
+	<div class="main" id="manipulate" hidden>
+		<input type="button" value="Delete" onclick="manipulateItem('delete')">
+		<span id="changePrior">
+			<select id='priorityJr'>
+			<option value='High' id="high">High</option>
+			<option value='Medium' id="med">Medium</option> 
+			<option value='Low' id="low">Low</option>
+			</select>
+		</span>
+		<input type="button" value="Change Priority" onclick="manipulateItem('priority')">
+		
+	</div>
+</body>
+</html>
