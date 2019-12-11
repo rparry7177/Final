@@ -48,7 +48,7 @@ function manipulateItem(reference)
 	}
 	else if(reference=="priority")
 	{
-		alert(referenceIndex);
+		//alert(referenceIndex);
 		var lsval = window.localStorage.getItem(referenceIndex);
 		window.localStorage.removeItem(referenceIndex);
 		if(lsval != null)
@@ -133,7 +133,7 @@ function reloadScreen()
 	
 function plus()
 {	
-	document.getElementById("output2").innerHTML = "";
+	//document.getElementById("output2").innerHTML = "";
     key=1;
 	//parsing string into vars
 	var cat = "";
