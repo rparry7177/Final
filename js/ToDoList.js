@@ -186,6 +186,7 @@ function plus()
 		//create formatting 
 		str += "<tr id="+temp+"><td>" + "<img src='img/sparkle2.gif' width='30px' height='30px' id='point'><input type = 'checkbox' id = 'box"+temp+"' onclick='check(" + temp +")'> <img src='img/sparkle2.gif' width='30px' height='30px'>" + P4 + P3 + item + P4 + P3 + Due + P4 + P3 + prior2 + P4 + P3 + cat + P2;
 		document.getElementById("output2").innerHTML += str;
+		str="";
 	}
 }
 	  
