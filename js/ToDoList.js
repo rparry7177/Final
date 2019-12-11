@@ -149,7 +149,7 @@ function plus()
 	var temp = "";
 	var temp2 = "";
 
-    temp=key.toString();
+    temp=key;
 	prior = document.getElementById("priority"+temp).value;
 	
 	prior = prior.toString();
@@ -170,7 +170,7 @@ function plus()
 	item = document.getElementById("item"+temp).value;
 	Due = document.getElementById("dueDate"+temp).value;
 	
-	
+	temp=key.toString();
 	temp2=cat+"~"+item+"~"+Due+"~"+prior;
 	key++;
 	
